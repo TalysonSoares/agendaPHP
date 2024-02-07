@@ -2,9 +2,8 @@
     include_once("templates/header.php");
 ?>
   <div class="container">
-  <p id="msg">Testando mensagem</p>
     <?php if(isset($printMsg) && $printMsg != ''): ?>
-      <p id="id"><?= $printMsg ?></p>
+      <p id="msg"><?= $printMsg ?></p>
     <?php endif; ?>
     <h1 id="mainTitle">Minha Agenda</h1>
     <?php if(count($contacts) > 0): ?>
