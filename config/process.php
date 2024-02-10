@@ -3,7 +3,8 @@
     session_start();
 
     include_once('connection.php');
-    include_once('config/url.php');
+    include_once(__DIR__ . '/url.php');
+
 
     $id;
 
