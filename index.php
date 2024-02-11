@@ -38,7 +38,6 @@
 <?php 
     include_once("templates/modal.html") 
 ?> 
-<script src="script.js"></script>
 <?php
     include_once("templates/footer.php");
 ?> 
