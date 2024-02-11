@@ -24,17 +24,21 @@
               <td><?= $contact["phone"]?></td>
               <td class="actions">
                 <a href="<?= $BASE_URL ?>show.php?id=<?= $contact["id"] ?>"><i class="fas fa-eye check-icon"></i></a>
-                <a href="#"><i class="fas fa-edit edit-icon"></i></a>
-                <button type="submit" class="deleteBtn"><i class="fas fa-times delete-icon"></i></button>
+                <a href="<?= $BASE_URL ?>edit.php?id=<?= $contact["id"] ?>"><i class="fas fa-edit edit-icon"></i></a>
+                <button type="submit" class="deleteBtn" data-bs-toggle="modal" data-bs-target="#staticBackdrop" data-contact-id="<?= $contact["id"] ?>"><i class="fas fa-times delete-icon"></i></button>
               </td>
             </tr>
-          <?php endforeach;?>
-        </tbody>
-      </table>
-    <?php else :?>
-      <p id="emptyListText">Ainda não há contatos na sua agenda, <a href="<?= $BASE_URL?>create.php">Clique aqui para adicionar</a></p>
-    <?php endif; ?>
-  </div>
+            <?php endforeach;?>
+          </tbody>
+        </table>
+        <?php else :?>
+          <p id="emptyListText">Ainda não há contatos na sua agenda, <a href="<?= $BASE_URL?>create.php">Clique aqui para adicionar</a></p>
+          <?php endif; ?>
+        </div>
+<?php 
+    include_once("templates/modal.html") 
+?> 
+<script src="script.js"></script>
 <?php
     include_once("templates/footer.php");
 ?> 
