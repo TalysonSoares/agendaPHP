@@ -18,7 +18,7 @@
       <div class="mb-3">
         <label for="observations" class="form-label">Observações:</label>
         <textarea type="text" class="form-control" 
-        name="observations" id="observations " 
+        name="observations" id="observations" 
         placeholder="Insira as observações" rows="3"><?= $contact["observations"] ?></textarea>
       </div>
       <button type="submit" class="btn btn-primary">Atualizar</button>
@@ -26,4 +26,4 @@
   </div>
 <?php
     include_once("templates/footer.php");
-?> 
+?>
