@@ -7,10 +7,15 @@
     margin: 15px 0 30px;
 }
 
-/* HOME */
+/* home */
 #contactsTable {
     max-width: 800px;
     margin: 0 auto;
+}
+
+#contactsTable thead th {
+    color: #FFF;
+    background-color: #007BFF !important;
 }
 
 .colId {
@@ -41,11 +46,6 @@
     padding: 0;
 }
 
-#contactsTable thead th {
-    color: #FFF;
-    background-color: #007BFF !important;
-}
-
 #msg {
     color: #155724;
     background-color: #D4EDDA;
@@ -56,4 +56,41 @@
     margin: 0 auto;
     margin-top: 30px;
     border-radius: 10px;
+}
+
+/* contact details */
+#viewContactContainer {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+#backLinkContainer {
+    display: block;
+    width: 500px;
+    margin: 30px auto 0;
+}
+
+#backLink {
+    border: 1px solid #007BFF;
+    color: #007BFF;
+    border-radius: 5px;
+    padding: 5px;
+    text-decoration: none;
+    transition-duration: 350ms;
+}
+
+#backLink:hover {
+    background-color: #007BFF;
+    color: #fff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* create*/
+#createForm {
+    max-width: 500px;
+    margin: 0 auto;
 }
