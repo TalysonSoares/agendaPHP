@@ -21,14 +21,14 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary p-2">
                 <a class="navbar-brand" href="<?= $BASE_URL ?>index.php">
                     <img src="<?= $BASE_URL ?>/img/logo.svg" alt="Logo">
                 </a>
                 <div>
                     <div class="navbar-nav">
-                        <a id="home-link" class="nav-link" href="<?= $BASE_URL ?>index.php">Agenda</a>
-                        <a id="home-link" class="nav-link" href="<?= $BASE_URL ?>create.php">Adicionar Contato</a>
+                        <a id="home-link" class="nav-link active" href="<?= $BASE_URL ?>index.php">Agenda</a>
+                        <a class="nav-link active" href="<?= $BASE_URL ?>create.php">Adicionar Contato</a>
                     </div>
                 </div>
             </nav>
